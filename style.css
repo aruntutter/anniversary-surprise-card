@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 :root {
   --primary: #fff;
   --bg-color: rgb(5, 53, 61);
@@ -7,6 +9,7 @@
   --shadow-color: rgba(0, 0, 0, 0.2);
   --txt-color: #444;
   --heart-color: rgb(252, 8, 231);
+  --ff: 'Josefin Sans', sans-serif;
 }
 
 body {
@@ -90,6 +93,7 @@ body {
   color: var(--txt-color);
   text-align: center;
   font-size: 10px;
+  font-family: var(--ff);
 }
 
 .text-container {
@@ -100,6 +104,7 @@ body {
 .scrollable-content {
   max-height: 110px;
   overflow-y: auto;
+  margin-top: 5px;
 }
 
 .heart {
@@ -190,18 +195,51 @@ body {
   transform: translateY(0);
 }
 
-/* Audio */
-audio {
+.hidden-button-two {
+  margin-right: -140px;
+  border: none;
+  border-radius: 4px;
+  color: rgb(200, 207, 207);
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Custom Audio Player */
+.custom-audio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.custom-controls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.play-pause-btn {
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--heart-color);
+  transition: color 0.3s ease;
+}
+
+.play-pause-btn:hover {
+  color: #ff0000;
+  /* Change the color on hover as an example */
+}
+
+.progress-bar {
   width: 90%;
-  height: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  height: 5px;
+  background: #ddd;
+  position: relative;
   cursor: pointer;
 }
 
-/* Video */
-/* .text-container video {
-  width: 100%;
-  height: auto;
-  margin-top: 10px;
-} */
+.progress-indicator {
+  height: 100%;
+  width: 0;
+  background: var(--heart-color);
+}
