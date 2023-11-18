@@ -92,6 +92,16 @@ body {
   font-size: 10px;
 }
 
+.text-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.scrollable-content {
+  max-height: 110px;
+  overflow-y: auto;
+}
+
 .heart {
   position: absolute;
   top: 82%;
@@ -178,4 +188,20 @@ body {
   display: block;
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Audio */
+audio {
+  width: 90%;
+  height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* Video */
+.text-container video {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
 }
