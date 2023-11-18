@@ -14,5 +14,5 @@ function toggleFlap(event) {
 }
 
 function redirectToGitHub() {
-  window.location.href = "https://github.com/aruntutter";
+  window.location.href = "https://ephemeral-flan-a16124.netlify.app/";
 }
