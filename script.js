@@ -18,6 +18,9 @@ function redirectToGitHub() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+  // Show alert when the page loads
+  alert("Click the heart emoji.");
+
   const audio = document.querySelector(".custom-audio audio");
   const playPauseBtn = document.querySelector(".play-pause-btn");
   const progressBar = document.querySelector(".progress-bar");
